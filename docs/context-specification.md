@@ -6,7 +6,15 @@ _The context specification defines the context of the Capability Matrix System i
 
 _Problem description and a statement of intent, i.e. a conclusion of the objectives of a potentially resulting project._
 
-**Problem:** Representing the knowledge and abilities of a research group is difficult yet vital for outreach, coordination, and presentation. **Solution:** Through the Capability Matrix System, a research group can organize and visualize their capabilities in a harmonized and accessible manner.
+Problem Descriptions: A research group is defined by the capabilities of its individual members. Making these capabilities explicit, allows the group to identify opportunities to collaborate in research applications, strategically expand its capabilities by recruitment efforts, and visualize individual and cluster-wise capabilities. The following challenges are considered in scope of this project:
+
+1. Understanding of capabilities: Capabilities are hard to grasp, systematically elicit, and distinguish.
+2. Recording capabilities: Specifying, which capabilities a researcher has to which degree, is tedious.
+3. Maintaining capabilities: Keeping capabilities and the extent to which they are obtained up-to-date is impossible without a framework.
+4. Communicating capabilities: It is difficult to visualize the capability profile (1) of a single researcher, as well as (2) of a research group.
+
+Statement of Intent: A system that both helps to undestand and frame capabilities of a specific research domain (e.g., requirements engineering), but also assists recording, maintaining, and communicating these abilities to external stakeholders and potential collaborators.
+
 
 ## Stakeholder Model
 
