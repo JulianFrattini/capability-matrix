@@ -6,15 +6,14 @@ _The context specification defines the context of the Capability Matrix System i
 
 _Problem description and a statement of intent, i.e. a conclusion of the objectives of a potentially resulting project._
 
-Problem Descriptions: A research group is defined by the capabilities of its individual members. Making these capabilities explicit, allows the group to identify opportunities to collaborate in research applications, strategically expand its capabilities by recruitment efforts, and visualize individual and cluster-wise capabilities. The following challenges are considered in scope of this project:
+Problem Descriptions: A research group is defined by the capabilities of its individual members. Making these capabilities explicit allows the group to identify opportunities to collaborate in research applications, strategically expand its capabilities by recruitment efforts, and visualize individual and cluster-wise capabilities. The following challenges are considered in scope of this project:
 
 1. Understanding of capabilities: Capabilities are hard to grasp, systematically elicit, and distinguish.
-2. Recording capabilities: Specifying, which capabilities a researcher has to which degree, is tedious.
+2. Recording capabilities: Specifying which capabilities a researcher has to which degree is tedious.
 3. Maintaining capabilities: Keeping capabilities and the extent to which they are obtained up-to-date is impossible without a framework.
-4. Communicating capabilities: It is difficult to visualize the capability profile (1) of a single researcher, as well as (2) of a research group.
+4. Communicating capabilities: It is difficult to visualize the capability profile (1) of a single researcher as well as (2) of a research group.
 
 Statement of Intent: A system that both helps to undestand and frame capabilities of a specific research domain (e.g., requirements engineering), but also assists recording, maintaining, and communicating these abilities to external stakeholders and potential collaborators.
-
 
 ## Stakeholder Model
 
@@ -23,7 +22,7 @@ _Stakeholders comprehend individuals, groups, or institutions having the respons
 ```mermaid
 classDiagram
     class Researcher {
-        +lead: boolean
+        +leading: boolean
         +internal: boolean
         +applyForFunding(): void
     }
@@ -48,8 +47,10 @@ _Each goal, whether it is a business goal, a usage goal, or a system goal, is is
 
 | ID | Stakeholder | Goal | Type |
 |---|---|---|---|
-| G1 | Researcher | Getting an overview over the capabilities of a research group | Usage |
-| G2 | Researcher | Conveniently maintaing a profile of ones own capabilities | System |
-| G3 | Researcher (lead, internal) | Determining eligible group members to answer a funding call | Usage |
-| G4 | Institution | Visualizing success of own research groups | Business |
-| G5 | Funding Agency | Assessing the academic profile of a researcher | Usage |
+| | Researcher | Getting an overview of the capabilities of a research group | Usage |
+| | Lead researcher | Identifying missing capabilities in a research group for targeted hiring | Usage |
+| | Researcher | Keeping capability records up-to-date | System |
+| | Researcher | Identifying collaborators with specific capabilities to answer a funding call | Usage |
+| | Researcher | Visualizing a personal capability portfolio | Business |
+| | Institution | Visualizing success of own research groups | Business |
+| | Funding Agency | Assessing the academic profile of a researcher | Usage |
