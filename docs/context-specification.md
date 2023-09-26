@@ -6,7 +6,7 @@ _The context specification defines the context of the Capability Matrix System i
 
 _Problem description and a statement of intent, i.e. a conclusion of the objectives of a potentially resulting project._
 
-Problem Descriptions: A research group is defined by the capabilities of its individual members. Making these capabilities explicit allows the group to identify opportunities to collaborate in research applications, strategically expand its capabilities by recruitment efforts, and visualize individual and cluster-wise capabilities. The following challenges are considered in scope of this project:
+Problem Descriptions: A Researcher o-- CapabilityPortfolioresearch group is defined by the capabilities of its individual members. Making these capabilities explicit allows the group to identify opportunities to collaborate in research applications, strategically expand its capabilities by recruitment efforts, and visualize individual and cluster-wise capabilities. The following challenges are considered in scope of this project:
 
 1. Understanding of capabilities: Capabilities are hard to grasp, systematically elicit, and distinguish.
 2. Recording capabilities: Specifying which capabilities a researcher has to which degree is tedious.
@@ -54,3 +54,59 @@ _Each goal, whether it is a business goal, a usage goal, or a system goal, is is
 | | Researcher | Visualizing a personal capability portfolio | Business |
 | | Institution | Visualizing success of own research groups | Business |
 | | Funding Agency | Assessing the academic profile of a researcher | Usage |
+
+## Domain Model
+
+```mermaid
+classDiagram
+    direction LR
+
+    class ResearchGroup {
+
+    }
+
+    class LeadResearcher {
+
+    }
+
+    class CapabilityPortfolio {
+
+    }
+
+    class Researcher {
+        +name
+    }
+
+    class Institution {
+        +name
+    }
+
+    class Capability {
+        +name
+        +definition
+        +strenghtOfEvidence
+    }
+
+    class Evidence {
+        +name
+        +definition
+        +source
+        +date
+        +contributionDegree
+    }
+
+    class CapabilityGroup {
+        +name
+    }
+
+    Researcher <|-- LeadResearcher
+    Researcher "1" *-- "1" CapabilityPortfolio
+    Researcher "0..1" --> "0..1" Capability
+    Institution "1..*" *-- "1..*" Researcher
+    Institution "1" *-- "1" CapabilityPortfolio
+    Capability "1..*" --> "1..*" Evidence
+    CapabilityGroup "1" *-- "1..*" Capability
+    ResearchGroup "1..*" *-- "1" LeadResearcher
+    ResearchGroup "1..*" o-- "1..*" Researcher
+    ResearchGroup "1" *-- "1" CapabilityPortfolio
+```
