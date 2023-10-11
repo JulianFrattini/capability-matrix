@@ -37,8 +37,20 @@ classDiagram
         +decideFundingApplication(): boolean
     }
 
+    class Practitioner {
+        +champion: boolean
+        +lookingForOffering(): Researcher
+        +checkUpOnResearcher(): CompanyCard
+    }
+
+    class Student {
+        +lookingForSupervisor(): Researcher
+    }
+
     Researcher --o Institution
     Researcher --> FundingAgency
+    Student --> Researcher
+    Practitioner --> Researcher
 ```
 
 ## Objectives and Goals 
