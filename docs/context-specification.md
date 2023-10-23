@@ -59,10 +59,13 @@ _Each goal, whether it is a business goal, a usage goal, or a system goal, is is
 
 | ID | Stakeholder | Goal | Type |
 |---|---|---|---|
-| | Researcher | Getting an overview of the capabilities of a research group | Usage |
-| | Lead researcher | Identifying missing capabilities in a research group for targeted hiring | Usage |
-| | Researcher | Keeping capability records up-to-date | System |
-| | Researcher | Identifying collaborators with specific capabilities to answer a funding call | Usage |
-| | Researcher | Visualizing a personal capability portfolio | Business |
-| | Institution | Visualizing success of own research groups | Business |
-| | Funding Agency | Assessing the academic profile of a researcher | Usage |
+| G1 | Researcher | Getting an overview of the capabilities of a research group | Usage |
+| G2 | Lead researcher | Identifying lack of capabilities in a research group for targeted hiring | Usage |
+| G3 | Researcher | Keeping capability records up-to-date | System |
+| G4 | Researcher | Identifying collaborators with specific capabilities to answer a funding call | Usage |
+| G5 | Researcher | Visualizing a personal capability portfolio (e.g., to a funding agency) | Business |
+| G6 | Institution | Visualizing success of own research groups | Business |
+| G7 | Funding Agency | Assessing the academic profile of a researcher | Usage |
+| G8 | Student | Finding an eligible supervisor for a thesis | Usage |
+| G9 | Practitioner | Finding an eligible researcher for a collaboration | Usage |
+| G10 | Practitioner | Follow the progress of a researcher | Usage |
