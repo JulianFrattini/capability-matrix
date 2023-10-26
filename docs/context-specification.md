@@ -59,7 +59,7 @@ _Each goal, whether it is a business goal, a usage goal, or a system goal, is is
 
 | ID | Stakeholder | Goal | Type |
 |---|---|---|---|
-| G1 | Researcher | Getting an overview of the capabilities of a research group | Usage |
+| G1 | Researcher | Getting an overview of the capabilities of a research group to assess their capability distribution and maturity | Usage |
 | G2 | Lead researcher | Identifying lack of capabilities in a research group for targeted hiring | Usage |
 | G3 | Researcher | Keeping capability records up-to-date | System |
 | G4 | Researcher | Identifying collaborators with specific capabilities to answer a funding call | Usage |
@@ -68,4 +68,8 @@ _Each goal, whether it is a business goal, a usage goal, or a system goal, is is
 | G7 | Funding Agency | Assessing the academic profile of a researcher | Usage |
 | G8 | Student | Finding an eligible supervisor for a thesis | Usage |
 | G9 | Practitioner | Finding an eligible researcher for a collaboration | Usage |
-| G10 | Practitioner | Follow the progress of a researcher | Usage |
+| G10 | Practitioner | Follow the activities of a researcher | Usage |
+| G11 | Researcher | Prioritizing the visualization of problem-oriented over solution-oriented capabilities | Usage |
+| G12 | Researcher | Highlighting select capabilities in their profile | Usage |
+
+G11 was introduced to maintain control over the practitioners' expectations: when presenting solution-oriented capabilities (technical capabilities like AI/ML, tool development, NLP, etc.) too prominently, practitioners may be eager to employ a researcher to develop a solution rather than inviting them to investigate the problem.
