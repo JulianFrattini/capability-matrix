@@ -10,6 +10,7 @@ This artifact is structured as follows:
 
 * docs: context, requirements, and system specification according to the AMDiRE template [1,2]
   * [context-specification.md](./docs/context-specification.md): defines the context of the Capability Matrix System including a specification of the overall project scope, the stakeholders, rules, goals, and constraints as well as a specification of the domain model [1]
+  * [requirements-specification.md](./docs/requirements-specification.md): defines the requirements of the Capability Matrix System including a system vision, a usage model, and functional as well as non-functional requirements
 
 ## References
 
@@ -19,6 +20,4 @@ This artifact is structured as follows:
 
 ## Licensing
 
-Copyright © 2023 Julian Frattini
-
-This work is licensed under [GNU General Public License v3.0](./LICENSE).
+Copyright © 2023 Julian Frattini. This work is licensed under [GNU General Public License v3.0](./LICENSE).
