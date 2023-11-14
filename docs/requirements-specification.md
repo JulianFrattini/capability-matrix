@@ -22,3 +22,28 @@ The use cases fulfill the goals in the following way:
 | UC6 | |
 
 The goals G10-G12 are currently not addressed by any use case.
+
+## Usage Model
+
+_This content item details the use case overview of the system vision in its use cases. We distinguish services and use cases (or user stories respectively). Both concepts are means to describe (black box) system behaviour. Use cases describe sequences of interaction between actors (realising user groups) and the system as a whole._
+
+### UC1: Recording Evidence
+
+| UC1 | Recording Evidence |
+|---|---|
+| Actors | |
+| Pre-conditions | |
+| End conditions (success) | |
+| End conditions (failure) | |
+| Steps | |
+| Extensions | |
+
+### UC2: Check capability evidence
+
+### UC3: Get capability overview
+
+### UC4: Identify capability gap
+
+### UC5: Find expert in a field
+
+### UC6: Organizing capabilities
