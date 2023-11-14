@@ -31,12 +31,14 @@ _This content item details the use case overview of the system vision in its use
 
 | UC1 | Recording Evidence |
 |---|---|
-| Actors | |
-| Pre-conditions | |
-| End conditions (success) | |
-| End conditions (failure) | |
-| Steps | |
-| Extensions | |
+| Actors | Researcher |
+| Pre-conditions | The researcher is authenticated and has a valid, digital evidence |
+| End conditions (success) | The evidence is recorded and associated with the researcher |
+| End conditions (failure) | The evidence is either not recorded or not associated with the researcher |
+| Steps | 1. If a researcher presses "Add evidence", the system opens a dialog window with a dropdown menu for the evidence type. |
+| | 2. When the researcher selects the evidence type, the dialog window is populated with input fields of the respective attributes of the evidence type. |
+| | 3. When all mandatory input fields contain valid values and the the researcher presses "Confirm", the system records the evidence and associates it with the researcher. |
+| Extensions | 2.b. If the researcher presses "Report missing evidence", the system forwards them to an issue reporting interface. |
 
 ### UC2: Check capability evidence
 
