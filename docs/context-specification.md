@@ -73,3 +73,49 @@ _Each goal, whether it is a business goal, a usage goal, or a system goal, is is
 | G12 | Researcher | Highlighting select capabilities in their profile | Usage |
 
 G11 was introduced to maintain control over the practitioners' expectations: when presenting solution-oriented capabilities (technical capabilities like AI/ML, tool development, NLP, etc.) too prominently, practitioners may be eager to employ a researcher to develop a solution rather than inviting them to investigate the problem.
+
+## Domain Model
+
+_The external systems, that interact with the system under development, compose the domain model. For business information systems, the domain model is extended with a business process model represented in various types of activities that need and produce business objects. A business process model is a collection of all instances of the activities and their (causal) relations._
+
+```mermaid
+classDiagram
+    direction TB
+
+    class CapabilityGroup {
+        +name: str
+        +importance: int
+    }
+
+    class Capability {
+        +name: str
+        +definition: str
+    }
+
+    class Evidence {
+        +name: str
+        +date: date
+    }
+
+    class Publication {
+        +venue: str
+        +authorship: int
+    }
+
+    class Repository {
+        +location: url
+        +license: enum
+    }
+
+    class Certificate {
+        +issuer: str
+    }
+
+    Capability "1..*" --> "1..*" Evidence : is proven by
+    Capability "1" --> "0..*" Capability : decomposes into
+    CapabilityGroup "1" *-- "1..*" Capability : is composed of
+
+    Repository --|> Evidence
+    Publication --|> Evidence
+    Certificate --|> Evidence
+```
