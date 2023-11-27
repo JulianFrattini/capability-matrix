@@ -42,6 +42,15 @@ _This content item details the use case overview of the system vision in its use
 
 ### UC2: Check capability evidence
 
+| UC2 | Check Capability Evidence 
+|---|---|
+| Actors | User of the system (Funding Agency or Practitioner) |
+| Pre-conditions | The system currently visualizes at least one researcher and their overall ranking in regard to a capability |
+| End conditions (success) | The user sees a list of items providing evidence for the capability. |
+| Steps | 1. If a user clicks on the capability ranking of a researcher, a window lists the top five most recent items of evidence for that capability. |
+| Extensions | 2. If a user clicks "expand", the window shows all items of evidence for that capability. |
+| | 1.b. If the administrator configured to show the strongest instead of the most recent items of evidence and a user clicks on the capability ranking of a researcher, a window lists the top five strongest items of evidence for that capability. |
+
 ### UC3: Get capability overview
 
 ### UC4: Identify capability gap
