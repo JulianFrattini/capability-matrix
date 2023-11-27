@@ -78,6 +78,10 @@ G11 was introduced to maintain control over the practitioners' expectations: whe
 
 _The external systems, that interact with the system under development, compose the domain model. For business information systems, the domain model is extended with a business process model represented in various types of activities that need and produce business objects. A business process model is a collection of all instances of the activities and their (causal) relations._
 
+### Static Domain Model
+
+The static domain model describes the entities relevant to the context of the system and their relationship among each other.
+
 ```mermaid
 classDiagram
     direction TB
@@ -118,4 +122,24 @@ classDiagram
     Repository --|> Evidence
     Publication --|> Evidence
     Certificate --|> Evidence
+```
+
+### Dynamic Domain Model
+
+The dynamic domain model visualizes the business processes as implied by the goals.
+
+**G1: Obtaining an Overview**
+
+```mermaid
+sequenceDiagram
+participant Researcher
+participant Research Group Representative
+participant Member 1
+participant Member n
+Researcher ->> Research Group Representative: Request Overview 
+Research Group Representative ->> Member 1: Request Capability Status
+Research Group Representative ->> Member n: Request Capability Status
+Member 1 ->> Research Group Representative: Provide Capability Status
+Member n ->> Research Group Representative: Provide Capability Status
+Research Group Representative ->> Researcher: Provide Capability Overview
 ```
