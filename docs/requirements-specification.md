@@ -58,3 +58,48 @@ _This content item details the use case overview of the system vision in its use
 ### UC5: Find expert in a field
 
 ### UC6: Organizing capabilities
+Only Create (C) use cases are explicitly defined here. Update (U) and Delete (D) need still to be defined and shall not contradict/invalidate Create use cases.
+
+| UC6a | Create capability group |
+|---|---|
+| Actors | Admin |If the capability group name exists already, the system prevents the Admin from creating the capability group. |
+| Pre-conditions | The admin is authenticated and has a valid, digital evidence. |
+| End conditions (success) | The capability group is created. |
+| End conditions (failure | The capability group is not created. |
+| Steps | 1. If an Admin presses "Create capability group", the system opens a dialog window with information fields required for a new capability group. |
+| | 2. The Admin enters the information for a new capability group: name, description, and importance (I forgot what we thought about this attribute). |
+| | 3. The system checks whether the capability group name is unique and whether similar capability group names or capability names already exist. |
+| | 4. The Admin presses "Save" and the new capability group is created. |
+| Extensions | 3.a. The system lists similar capability group names and capability names. |
+| | 3.b. If the capability group name exists already, the system prevents the Admin from creating the capability group. |
+| | 4.a. The Admin presses "Cancel" and the new capability group is not created. |
+
+| UC6b | Create capability |
+|---|---|
+| Actors | Admin |
+| Pre-conditions | The Admin is authenticated and has a valid, digital evidence. |
+| End conditions (success) | The capability is created. |
+| End conditions (failure | The capability is not created. |
+| Steps | 1. If an Admin presses "Create capability", the system opens a dialog window with information fields required for a new capability. |
+| | 2. The Admin enters the information for a new capability: name, description, capability group, and allowed evidence types. |
+| | 3. The system checks whether the capability name is unique and whether similar capability names already exist. |
+| | 4. The Admin presses "Save" and the new capability is created. |
+| Extensions | 3.a. The system lists similar capability names. |
+| | 3.b. If the capability name exists already, the system prevents the Admin from creating the capability. |
+| | 4.a. The Admin presses "Cancel" and the new capability is not created. |
+
+The following UC increases extensibility as evidence types do not have to be defined during system development. Admins can create/update/delete evidence types at run-time.
+
+| UC6c | Create evidence type |
+|---|---|
+| Actors | Admin |
+| Pre-conditions | The Admin is authenticated and has a valid, digital evidence |
+| End conditions (success) | The evidence type is created. |
+| End conditions (failure | The evidence type is not created. |
+| Steps | 1. If an Admin presses "Create evidence type", the system opens a dialog window with information fields required for a new evidence type. |
+| | 2. The Admin enters information for a new evidence type: evidence type name, attributes, attribute types. |
+| | 3. The system checks whether the evidence type name is unique. |
+| | 4. The admin presses "Save" and the new evidence type is created. |
+| Extensions | 3.a. The system lists similar evidence type names. |
+| | 3.b. If the evidence type name exists already, the system prevents the Admin from creating the evidence type. |
+| | 4.a. The Admin presses "Cancel" and the new evidence type is not created. |
