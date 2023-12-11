@@ -78,6 +78,10 @@ G11 was introduced to maintain control over the practitioners' expectations: whe
 
 _The external systems, that interact with the system under development, compose the domain model. For business information systems, the domain model is extended with a business process model represented in various types of activities that need and produce business objects. A business process model is a collection of all instances of the activities and their (causal) relations._
 
+### Static Domain Model
+
+The static domain model describes the entities relevant to the context of the system and their relationship among each other.
+
 ```mermaid
 classDiagram
     direction TB
@@ -118,4 +122,120 @@ classDiagram
     Repository --|> Evidence
     Publication --|> Evidence
     Certificate --|> Evidence
+```
+
+### Dynamic Domain Model
+
+The dynamic domain model visualizes the business processes as implied by the goals.
+
+#### G1: Obtaining an Overview
+
+```mermaid
+sequenceDiagram
+
+actor Researcher
+actor Research Group Representative
+actor Member 1
+actor Member n
+
+Researcher ->> Research Group Representative: Request Overview 
+Research Group Representative ->> Member 1: Request Capability Status
+Research Group Representative ->> Member n: Request Capability Status
+Member 1 -->> Research Group Representative: Provide Capability Status
+Member n -->> Research Group Representative: Provide Capability Status
+Research Group Representative -->> Researcher: Provide Capability Overview
+```
+
+#### G2: Identifying lack of capabilities in a research group for targeted hiring
+
+```mermaid
+sequenceDiagram
+
+actor Lead Researcher
+actor Research Group Representative
+actor Member 1
+actor Member n
+
+Lead Researcher ->> Research Group Representative: Request Overview 
+Research Group Representative ->> Member 1: Request Capability Status
+Research Group Representative ->> Member n: Request Capability Status
+Member 1 -->> Research Group Representative: Provide Capability Status
+Member n -->> Research Group Representative: Provide Capability Status
+Research Group Representative ->> Research Group Representative: determine gaps
+Research Group Representative -->> Lead Researcher: Provide Capability Overview
+```
+
+#### G3: Keeping capability records up-to-date
+
+```mermaid
+sequenceDiagram
+
+actor r as Researcher 
+participant p as Portfolio
+
+r ->> r : Improve capability
+r ->> p : Update capability information
+```
+
+#### G4: Identifying collaborators with specific capabilities to answer a funding call
+
+```mermaid
+sequenceDiagram
+
+actor r1 as Researcher 1
+participant fc as Funding Call
+actor r2 as Researcher 2
+actor rn as Researcher n
+
+r1 ->> fc : Obtain capability requirements
+fc -->> r1 : Capability requirements
+r1 ->> r2 : Request capability status
+r1 ->> rn : Request capability status
+r2 -->> r1 : Capability status
+rn -->> r1 : Capability status
+r1 ->> r1 : Identify fit
+```
+
+#### G5 : Visualizing a personal capability portfolio
+
+```mermaid
+sequenceDiagram
+
+actor r1 as Researcher 1
+actor r2 as Researcher 2
+
+r1 ->> r2 : Request capability status
+r2 ->> r2 : Visualize capability status
+r2 -->> r1 : Capability status visualization
+```
+
+#### G7 : Assessing the academic profile of a researcher 
+
+```mermaid
+sequenceDiagram
+
+actor r1 as Researcher 1
+actor r2 as Researcher 2
+
+r1 ->> r2 : Request capability status
+r2 -->> r1 : Capability status
+```
+
+#### G8 : Finding an eligible supervisor for a thesis 
+
+This business process is similar to **G9 : Finding an eligible researcher for a collaboration**.
+
+```mermaid
+sequenceDiagram
+
+actor s as Student
+actor r1 as Researcher 1
+actor r2 as Researcher 2
+
+s ->> r1 : Request capability status
+s ->> r2 : Request capability status
+r1 -->> s : Capability status
+r2 -->> s : Capability status
+s ->> s : Determine eligible supervisor
+s ->> r1 : Request supervision
 ```
