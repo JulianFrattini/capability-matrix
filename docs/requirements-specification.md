@@ -54,7 +54,18 @@ _This content item details the use case overview of the system vision in its use
 ### UC3: Get capability overview
 
 ### UC4: Identify capability gap
-
+| UC4 | Identify Capability Gaps
+|---|---|
+| Actors | Lead Researcher |
+| Pre-conditions | - The system contains a comprehensive list of current capabilities of the research group members. |
+|  |  - The lead researcher has access to the system and understands the group’s capability needs.|
+| End conditions (success) | The lead researcher identifies areas where the group lacks expertise or skills. |
+| Steps | 1. The lead researcher accesses the Capability Matrix System. |
+|       | 2. The system presents an overview of the current capabilities of the group members. |
+|       | 3. The lead researcher reviews the capabilities and identifies gaps in expertise or skills. |
+|       | 4. The system may suggest potential areas for improvement based on the existing capability data. |
+| Extensions | 3.a If a capability gap is identified, the system can suggest potential external collaborators or areas for targeted hiring. |
+|            | 3.b The lead researcher can set alerts or reminders for periodic capability assessments to monitor progress in filling the gaps. |
 ### UC5: Find expert in a field
 
 ### UC6: Organizing capabilities
