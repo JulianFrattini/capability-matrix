@@ -64,7 +64,8 @@ _This content item details the use case overview of the system vision in its use
 |  |  - The user has a set of capabilities to use for looking up researchers.|
 | End conditions (success) | The user sees a list of matched researchers with their capabilities. |
 | Steps | 1. The user type in a set of capabilities separated by a space. |
-|       | 2. A list of researchers that have at least one of the capabilities entered by the user is shown. |
+|       | 2. The system shows a list of researchers that have at least one of the capabilities entered by the user. |
 | Extensions | 2.b If the user clicks on the researcher, a new window opens showing the researcher's profile. |
+|  | 2.c If no researchers exist in the database that matches the capabilities entered by the user, the system displays the message "No researcher found that matches the required capabilities." |
 
 ### UC6: Organizing capabilities
